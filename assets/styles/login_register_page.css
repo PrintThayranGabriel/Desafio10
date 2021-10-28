@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400;500;600;800&display=swap');
+
+:root {
+    --background: #13131F;
+    --purple: #8257E6;
+    --white: #FEFBFB;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background: var(--background);
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+header .links a{
+    background: var(--purple);
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    row-gap: 20px;
+}
+
+.form .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form .text p{
+    text-align: center;
+    width: 300px;
+}
+
+.form h1{
+    font-size: 40px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.form p{
+    font-size: 13px;
+    color: var(--white);
+    font-weight: 100;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"], form input[type="password"]{
+    background: #29293882;
+    color: #fff;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+form input[type="text"]:focus{
+    border: 1px solid rgba(255, 255, 255, 0.118);
+}
+
+form input[type="password"]:focus{
+    border: 1px solid rgba(255, 255, 255, 0.118);
+}
+
+form button{
+    background: var(--purple);
+    border: none;
+    padding: 10px 20px;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px 20px 0px;
+}
+
+.remember a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.remember_button{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.wave1{
+    position: absolute;
+    bottom: 0;
+    fill: #8257e621;
+}
+
+.wave2{
+    position: absolute;
+    bottom: 0;
+    fill: #8257e615;
+}
